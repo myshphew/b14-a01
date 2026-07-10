@@ -1,0 +1,67 @@
+.speakers {
+    padding: 80px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:56px;
+}
+
+.speakers h2{
+    font-family: "Inter";
+    font-weight: bold;
+    line-height: 64px;
+    font-size: 56px;
+    text-align: center;
+    color: #000102;
+}
+
+.speaker-grid {
+    width: 100%;
+    max-width: 1320px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 32px;
+}
+
+.speaker-card {
+    border: 1px solid #E5E7EB;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.speaker-card img {
+    aspect-ratio: 2 / 1;
+}
+
+.speaker-details {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    gap: 8px;
+}
+
+.speaker-field {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.3px;
+    color: #2563EB;
+}
+
+.speaker-name {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 28px;
+    color: #0D1B2A;
+}
+
+.speaker-info {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #575757;
+}
+
+
