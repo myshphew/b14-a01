@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./styles/nav.css">
     <link rel="stylesheet" href="./styles/hero.css">
     <link rel="stylesheet" href="./styles/speakers.css">
+    <link rel="stylesheet" href="./styles/ticket.css">
 </head>
 <body>
     <header>
@@ -42,8 +43,8 @@
         </section>
     </header>
     <main>
-        <section class="speakers">
-            <h2>Meet the Speakers</h2>
+        <section id="speakers">
+            <h2 class="section-title">Meet the Speakers</h2>
             <div class="speaker-grid">
                 <div class="speaker-card">
                     <img src="./assets/speakers/andrej.png" alt="">
@@ -81,7 +82,65 @@
         </section>
 
 
-        <section class="ticket"></section>
+        <section id="ticket">
+            <div>
+                <h2 class="section-title">Secure Your Spot</h2>
+                <p class="section-subtitle">Early-bird pricing ends August 15, 2026.</p>
+            </div>
+            <div class="ticket-grid">
+                <div class="ticket-card" id="standard">
+                    <div class="ticket-info">
+                        <h3>STANDARD</h3>
+                        <p class="ticket-price">$399</p>
+                        <p class="ticket-usercount">per person</p>
+                    </div>
+                    <hr>
+                    <ul class="ticket-features">
+                        <li>Access to all 3 conference days</li>
+                        <li>48 curated technical talks</li>
+                        <li>2 workshop sessions</li>
+                        <li>Networking lunch & coffee breaks</li>
+                        <li>Conference swag bag</li>
+                        <li>Digital recordings (30 days)</li>
+                    </ul>
+                    <button>Get Standard</button>
+                </div>
+                <div class="ticket-card" id="pro">
+                    <div class="ticket-info">
+                        <h3>PRO</h3>
+                        <p class="ticket-price">$749</p>
+                        <p class="ticket-usercount">per person</p>
+                    </div>
+                    <hr>
+                    <ul class="ticket-features">
+                        <li>Everything in Standard</li>
+                        <li>Unlimited workshop access</li>
+                        <li>Speaker meet & greet</li>
+                        <li>VIP networking dinner</li>
+                        <li>Lifetime recording access</li>
+                        <li>1-on-1 mentorship (30 min)</li>
+                    </ul>
+                    <button>Get Pro</button>
+                </div>
+                <div class="ticket-card" id="team">
+                    <div class="ticket-info">
+                        <h3>TEAM</h3>
+                        <p class="ticket-price">$5,999</p>
+                        <p class="ticket-usercount">up to 10 people</p>
+                    </div>
+                    <hr>
+                    <ul class="ticket-features">
+                        <li>Everything in Pro (10 seats)</li>
+                        <li>Dedicated team lounge access</li>
+                        <li>Private workshop booking</li>
+                        <li>Company logo on event page</li>
+                        <li>Recruitment booth (1 day)</li>
+                        <li>Priority customer support</li>
+                    </ul>
+                    <button>Contact Us</button>
+                </div>
+            </div>
+        </section>
         <section class="ai"></section>
     </main>
 </body>

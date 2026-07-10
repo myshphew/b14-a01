@@ -6,6 +6,35 @@
 
 html {
     font-family: "Inter", sans-serif;
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+section {
+    padding: 80px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:56px;
+}
+
+.section-title {
+    font-family: "Inter";
+    font-weight: bold;
+    line-height: 64px;
+    font-size: 56px;
+    text-align: center;
+    color: #000102;
+}
+
+.section-subtitle {
+    font-family: "Inter";
+    font-weight: 300;
+    line-height: 24px;
+    font-size: 16px;
+    text-align: center;
+    color: #575757;
 }
 
 img {
@@ -20,6 +49,12 @@ ul, ol {
 a {
     text-decoration: none;
     color: inherit;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background: #E5E7EB;
 }
 
 button {
