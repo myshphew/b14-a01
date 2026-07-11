@@ -1,0 +1,149 @@
+.plate{
+    position:relative;
+    width:120px;
+    height:120px;
+    transform:rotate(-45deg) skewY(20deg) skewX(18deg);
+}
+
+/* ---------- Stack ---------- */
+
+.plate-stack{
+    width: 100%;
+    height: auto;
+    min-width: 360px;
+    max-width: 400px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.plate{
+    margin-top:-80px;
+    position:relative;
+}
+
+.plate:first-child{
+    margin-top:0;
+}
+
+.plate:nth-child(1){ z-index:4; }
+.plate:nth-child(2){ z-index:3; }
+.plate:nth-child(3){ z-index:2; }
+.plate:nth-child(4){ z-index:1; }
+
+/* ---------- AI / ML ---------- */
+
+.plate:nth-child(1){
+    background:#8B7FFF;
+}
+
+.plate:nth-child(1) .left-face{
+    background:#7468E6;
+}
+
+.plate:nth-child(1) .right-face{
+    background:#564CB8;
+}
+
+/* ---------- DevOps ---------- */
+
+.plate:nth-child(2){
+    background:#69D7C3;
+}
+
+.plate:nth-child(2) .left-face{
+    background:#50BBA8;
+}
+
+.plate:nth-child(2) .right-face{
+    background:#398C7C;
+}
+
+/* ---------- Frontend ---------- */
+
+.plate:nth-child(3){
+    background:#FFC67A;
+}
+
+.plate:nth-child(3) .left-face{
+    background:#E7A75C;
+}
+
+.plate:nth-child(3) .right-face{
+    background:#BF8040;
+}
+
+/* ---------- Security ---------- */
+
+.plate:nth-child(4){
+    background:#FF8AA1;
+}
+
+.plate:nth-child(4) .left-face{
+    background:#E46C84;
+}
+
+.plate:nth-child(4) .right-face{
+    background:#B94E66;
+}
+
+/* ---------- Left Side ---------- */
+
+.left-face{
+    position:absolute;
+    left:-16px;
+    bottom:-32px;
+    width:120px;
+    height:32px;
+    transform:skewX(-45deg);
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+/* ---------- Right Side ---------- */
+
+.right-face{
+    position:absolute;
+    top:16px;
+    right:120px;
+    width:32px;
+    height:120px;
+    transform:skewY(-45deg);
+}
+
+/* ---------- Label ---------- */
+
+.label{
+    position:absolute;
+    top:50%;
+    left:50%;
+
+    transform:translate(-50%, -50%);
+
+    font-size:16px;
+    font-weight:600;
+    letter-spacing:1px;
+    color:#ffffff;
+
+    white-space:nowrap;
+    z-index:10;
+    user-select:none;
+}
+
+.plate{
+    opacity:.35;
+    transition:
+        opacity .35s ease,
+        transform .35s ease;
+}
+
+.plate:hover{
+    opacity:1;
+    transform:
+        rotate(-45deg)
+        skewY(20deg)
+        skewX(18deg)
+        translateY(-12px);
+}
