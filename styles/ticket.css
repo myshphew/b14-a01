@@ -1,100 +1,101 @@
 .ticket-grid {
-    width: 100%;
-    max-width: 1160px;
-    display:grid;
-    justify-content: center;
-    grid-template-columns: repeat(3,1fr);
-    gap: 24px;
+  width: 100%;
+  max-width: 1160px;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
 }
 
 .ticket-card {
-    width: 100%;
-    border: 1px solid #E5E7EB;
-    border-radius: 12px;
-    padding: 32px;
-    display: flex;
-    flex-direction: column;
-    gap:20px;
-    overflow: hidden;
+  width: 100%;
+  border: 1px solid #e5e7eb;
+  border-radius: 24px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  overflow: hidden;
 }
 
-.ticket-card h3, .ticket-usercount {
-    font-weight: 500;
-    font-size: 13px;
-    line-height: 20px;
-    letter-spacing: 0.32px;
-    color: #888888;
+.ticket-card h3,
+.ticket-usercount {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 0.32px;
+  color: #888888;
 }
 
 .ticket-price {
-    margin-top: 8px;
-    font-weight: bold;
-    font-size: 44px;
-    line-height: 44px;
-    letter-spacing: 0.32px;
-    color: #0D1B2A;
+  margin-top: 8px;
+  font-weight: bold;
+  font-size: 44px;
+  line-height: 44px;
+  letter-spacing: 0.32px;
+  color: #0d1b2a;
 }
 
-.ticket-usercount{
-    margin-top: 8px;
-    font-weight: 400;
+.ticket-usercount {
+  margin-top: 8px;
+  font-weight: 400;
 }
 
 .ticket-features {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-left: 16px;
-    list-style: disc;    
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-left: 16px;
+  list-style: disc;
 }
 
 .ticket-features li {
-    font-size: 14px;
-    line-height: 20px;
-    font-weight: 400;
-    color: #333;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #333;
 }
 
 .ticket-features li::marker {
-    color: #2563EB;
+  color: #2563eb;
 }
 
 .ticket-card button {
-    width: 100%;
+  width: 100%;
 }
 
 #pro {
-    background-color:#0D1B2A;
+  background-color: #0d1b2a;
 }
 
 #pro h3 {
-    color: #93C5FD;
+  color: #93c5fd;
 }
 
 #pro .ticket-price {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 #pro .ticket-usercount {
-    color: #ffffff50;
+  color: #ffffff90;
 }
 
 #pro .ticket-features li {
-    color: #ffffff80;
+  color: #ffffff90;
 }
 
 #pro hr {
-    background: #ffffff10;
+  background: #ffffff10;
 }
 
 #standard button {
-    border: 1px solid #2563EB;
-    background: none;
-    color: #2563EB;
+  border: 1px solid #2563eb;
+  background: none;
+  color: #2563eb;
 }
 
 #team button {
-    border: 1px solid #0D1B2A;
-    background: none;
-    color: #0D1B2A;
+  border: 1px solid #2563eb;
+  background: none;
+  color: #2563eb;
 }
