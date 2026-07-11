@@ -1,262 +1,345 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DevConf 2026</title>
-    <link rel="icon" href="assets/branding/logo.svg" type="favicon">
+    <link rel="icon" href="assets/branding/logo.svg" type="favicon" />
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+      @import url("https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
     </style>
-    <link rel="stylesheet" href="./styles/main.css">
-    <link rel="stylesheet" href="./styles/nav.css">
-    <link rel="stylesheet" href="./styles/hero.css">
-    <link rel="stylesheet" href="./styles/speakers.css">
-    <link rel="stylesheet" href="./styles/ticket.css">
-    <link rel="stylesheet" href="./styles/event.css">
-    <link rel="stylesheet" href="./styles/sponsors.css">
-    <link rel="stylesheet" href="./styles/graphics.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/nav.css" />
+    <link rel="stylesheet" href="./styles/hero.css" />
+    <link rel="stylesheet" href="./styles/speakers.css" />
+    <link rel="stylesheet" href="./styles/ticket.css" />
+    <link rel="stylesheet" href="./styles/event.css" />
+    <link rel="stylesheet" href="./styles/sponsors.css" />
+    <link rel="stylesheet" href="./styles/graphics.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+  </head>
+  <body>
     <header>
-        <nav>
-            <div class="nav-container">
-                <div class="nav-logo">
-                    <img src="./assets/branding/logo.svg" alt="DevConf Logo">
-                    <p>DEVCONF<br>2026</p>
-                </div>
-                <ul>
-                    <li><a class="nav-link" href="#speakers">Speakers</a></li>
-                    <li><a class="nav-link" href="#schedule">Schedule</a></li>
-                    <li><a class="nav-link" href="#tracks">Tracks</a></li>
-                    <li><a class="nav-link" href="#venue">Venue</a></li>
-                    <li><a class="nav-link" href="#blog">Blog</a></li>
-                </ul>
-                <button class="register-btn">Register Now</button>
-            </div>
-        </nav>
-        <section class="hero">
-            <div class="hero-text">
-                <h1>Code. <em>Connect.</em> Create</h1>
-                <p>Join 4,000+ engineers, founders, and builders at the premier developer<br>conference of 2026. Three days of cutting-edge talks, hands-on workshops,<br>and meaningful connections.</p>
-            </div> 
-            <div class="hero-cta">
-                <button class="register-btn">Register Now</button>
-            </div>
-        </section>
+      <nav>
+        <div class="nav-container">
+          <div class="nav-logo">
+            <img src="./assets/branding/logo.svg" alt="DevConf Logo" />
+            <p>DEVCONF<br />2026</p>
+          </div>
+          <ul>
+            <li><a class="nav-link" href="#speakers">Speakers</a></li>
+            <li><a class="nav-link" href="#schedule">Schedule</a></li>
+            <li><a class="nav-link" href="#tracks">Tracks</a></li>
+            <li><a class="nav-link" href="#venue">Venue</a></li>
+            <li><a class="nav-link" href="#blog">Blog</a></li>
+          </ul>
+          <button class="register-btn">Register Now</button>
+        </div>
+      </nav>
+      <section class="hero">
+        <div class="hero-text">
+          <h1>Code. <em>Connect.</em> Create</h1>
+          <p>
+            Join 4,000+ engineers, founders, and builders at the premier
+            developer<br />conference of 2026. Three days of cutting-edge talks,
+            hands-on workshops,<br />and meaningful connections.
+          </p>
+        </div>
+        <div class="hero-cta">
+          <button class="register-btn">Register Now</button>
+        </div>
+      </section>
     </header>
     <main>
-        <!-- =================== Speakers Section =================== -->
+      <!-- =================== Speakers Section =================== -->
 
-        <section id="speakers">
-            <h2 class="section-title">Meet the Speakers</h2>
-            <div class="speaker-grid">
-                <div class="speaker-card">
-                    <img src="./assets/speakers/andrej.png" alt="">
-                    <div class="speaker-details">
-                        <p class="speaker-field">AI / ML</p>
-                        <h3 class="speaker-name">Andrej Karpathy</h3>
-                        <p class="speaker-info">Pretraining team, Anthropic</p>
-                    </div>
-                </div>
-                <div class="speaker-card">
-                    <img src="./assets/speakers/demis.png" alt="">
-                    <div class="speaker-details">
-                        <p class="speaker-field">Cloud & DevOps</p>
-                        <h3 class="speaker-name">Demis Hassabis</h3>
-                        <p class="speaker-info">Co-Founder and CEO, Google DeepMind</p>
-                    </div>
-                </div>
-                <div class="speaker-card">
-                    <img src="./assets/speakers/gary.png" alt="">
-                    <div class="speaker-details">
-                        <p class="speaker-field">Frontend</p>
-                        <h3 class="speaker-name">Gary Marcus</h3>
-                        <p class="speaker-info">Staff Engineer, Vercel</p>
-                    </div>
-                </div>
-                <div class="speaker-card">
-                    <img src="./assets/speakers/mustafa.png" alt="">
-                    <div class="speaker-details">
-                        <p class="speaker-field">Security</p>
-                        <h3 class="speaker-name">Mustafa Suleyman</h3>
-                        <p class="speaker-info">CEO of Microsoft AI</p>
-                    </div>
-                </div>
+      <section id="speakers">
+        <h2 class="section-title">Meet the Speakers</h2>
+        <div class="speaker-grid">
+            <div class="speaker-card">
+                <img src="./assets/speakers/andrej-karpathy.png" alt="" />
+            <div class="speaker-details">
+                <p class="speaker-field">AI / ML</p>
+                <h3 class="speaker-name">Andrej Karpathy</h3>
+                <p class="speaker-info">Pretraining team, Anthropic</p>
             </div>
+        </div>
+        <div class="speaker-card">
+            <img src="./assets/speakers/demis-hassabis.png" alt="" />
+            <div class="speaker-details">
+                <p class="speaker-field">Cloud & DevOps</p>
+                <h3 class="speaker-name">Demis Hassabis</h3>
+                <p class="speaker-info">Co-Founder and CEO, Google DeepMind</p>
+            </div>
+            </div>
+            <div class="speaker-card">
+                <img src="./assets/speakers/gary-marcus.png" alt="" />
+            <div class="speaker-details">
+                <p class="speaker-field">Frontend</p>
+                <h3 class="speaker-name">Gary Marcus</h3>
+                <p class="speaker-info">Staff Engineer, Vercel</p>
+            </div>
+            </div>
+            <div class="speaker-card">
+                <img src="./assets/speakers/mustafa-suleyman.png" alt="" />
+            <div class="speaker-details">
+                <p class="speaker-field">Security</p>
+                <h3 class="speaker-name">Mustafa Suleyman</h3>
+                <p class="speaker-info">CEO of Microsoft AI</p>
+            </div>
+          </div>
+        </div>
         </section>
 
         <!-- =================== Tickets Section =================== -->
 
         <section id="ticket">
-            <div>
-                <h2 class="section-title">Secure Your Spot</h2>
-                <p class="section-subtitle">Early-bird pricing ends August 15, 2026.</p>
+        <div>
+          <h2 class="section-title">Secure Your Spot</h2>
+          <p class="section-subtitle">
+            Early-bird pricing ends August 15, 2026.
+          </p>
+        </div>
+        <div class="ticket-grid">
+          <div class="ticket-card" id="standard">
+            <div class="ticket-info">
+              <h3>STANDARD</h3>
+              <p class="ticket-price">$399</p>
+              <p class="ticket-usercount">per person</p>
             </div>
-            <div class="ticket-grid">
-                <div class="ticket-card" id="standard">
-                    <div class="ticket-info">
-                        <h3>STANDARD</h3>
-                        <p class="ticket-price">$399</p>
-                        <p class="ticket-usercount">per person</p>
-                    </div>
-                    <hr>
-                    <ul class="ticket-features">
-                        <li>Access to all 3 conference days</li>
-                        <li>48 curated technical talks</li>
-                        <li>2 workshop sessions</li>
-                        <li>Networking lunch & coffee breaks</li>
-                        <li>Conference swag bag</li>
-                        <li>Digital recordings (30 days)</li>
-                    </ul>
-                    <button>Get Standard</button>
-                </div>
-                <div class="ticket-card" id="pro">
-                    <div class="ticket-info">
-                        <h3>PRO</h3>
-                        <p class="ticket-price">$749</p>
-                        <p class="ticket-usercount">per person</p>
-                    </div>
-                    <hr>
-                    <ul class="ticket-features">
-                        <li>Everything in Standard</li>
-                        <li>Unlimited workshop access</li>
-                        <li>Speaker meet & greet</li>
-                        <li>VIP networking dinner</li>
-                        <li>Lifetime recording access</li>
-                        <li>1-on-1 mentorship (30 min)</li>
-                    </ul>
-                    <button>Get Pro</button>
-                </div>
-                <div class="ticket-card" id="team">
-                    <div class="ticket-info">
-                        <h3>TEAM</h3>
-                        <p class="ticket-price">$5,999</p>
-                        <p class="ticket-usercount">up to 10 people</p>
-                    </div>
-                    <hr>
-                    <ul class="ticket-features">
-                        <li>Everything in Pro (10 seats)</li>
-                        <li>Dedicated team lounge access</li>
-                        <li>Private workshop booking</li>
-                        <li>Company logo on event page</li>
-                        <li>Recruitment booth (1 day)</li>
-                        <li>Priority customer support</li>
-                    </ul>
-                    <button>Contact Us</button>
-                </div>
+            <hr />
+            <ul class="ticket-features">
+              <li>Access to all 3 conference days</li>
+              <li>48 curated technical talks</li>
+              <li>2 workshop sessions</li>
+              <li>Networking lunch & coffee breaks</li>
+              <li>Conference swag bag</li>
+              <li>Digital recordings (30 days)</li>
+            </ul>
+            <button>Get Standard</button>
+          </div>
+          <div class="ticket-card" id="pro">
+            <div class="ticket-info">
+              <h3>PRO</h3>
+              <p class="ticket-price">$749</p>
+              <p class="ticket-usercount">per person</p>
             </div>
+            <hr />
+            <ul class="ticket-features">
+              <li>Everything in Standard</li>
+              <li>Unlimited workshop access</li>
+              <li>Speaker meet & greet</li>
+              <li>VIP networking dinner</li>
+              <li>Lifetime recording access</li>
+              <li>1-on-1 mentorship (30 min)</li>
+            </ul>
+            <button>Get Pro</button>
+          </div>
+          <div class="ticket-card" id="team">
+            <div class="ticket-info">
+              <h3>TEAM</h3>
+              <p class="ticket-price">$5,999</p>
+              <p class="ticket-usercount">up to 10 people</p>
+            </div>
+            <hr />
+            <ul class="ticket-features">
+              <li>Everything in Pro (10 seats)</li>
+              <li>Dedicated team lounge access</li>
+              <li>Private workshop booking</li>
+              <li>Company logo on event page</li>
+              <li>Recruitment booth (1 day)</li>
+              <li>Priority customer support</li>
+            </ul>
+            <button>Contact Us</button>
+          </div>
+        </div>
         </section>
 
         <!-- =================== AI Section =================== -->
 
         <section id="event">
-            <div>
-                <h2 class="section-title">More Than Talks.<br>An <em>Experience</em> Built For Developers.</h2>
-                <p class="section-subtitle">Learn. Build. Connect. Get Inspired.</p>
+        <div>
+          <h2 class="section-title">
+            More Than Talks.<br />An <em>Experience</em> Built For Developers.
+          </h2>
+          <p class="section-subtitle">Learn. Build. Connect. Get Inspired.</p>
+        </div>
+
+        <div class="event-container">
+          <!-- Left Gallery -->
+          <div class="gallery left-gallery">
+            <div class="item item-1">
+              <img
+                src="./assets/gallery/antenna-cw-cj_nFa14-unsplash.jpg"
+                alt="Conference Keynote"
+              />
             </div>
 
-            <div class="event-container">
+            <div class="item item-3">
+              <img
+                src="./assets/gallery/antenna-ohNCIiKVT1g-unsplash.jpg"
+                alt="Networking"
+              />
+            </div>
+          </div>
 
-                <!-- Left Gallery -->
-                <div class="gallery left-gallery">
-                    <div class="item item-1">
-                        <img src="./assets/gallery/antenna-cw-cj_nFa14-unsplash.jpg" alt="Conference Keynote">
-                    </div>
-            
-                    <div class="item item-3">
-                        <img src="./assets/gallery/antenna-ohNCIiKVT1g-unsplash.jpg" alt="Networking">
-                    </div>
-                </div>
-            
-                <!-- Plate Stack -->
-                <div class="gallery middle-gallery">
-                    <div class="plate-stack">
-                        <div class="plate">
-                            <div class="left-face"></div>
-                            <div class="right-face"></div>
-                            <span class="label">AI/ML</span>
-                        </div>
-    
-                        <div class="plate">
-                            <div class="left-face"></div>
-                            <div class="right-face"></div>
-                            <span class="label">DevOps</span>
-                        </div>
-                
-                        <div class="plate">
-                            <div class="left-face"></div>
-                            <div class="right-face"></div>
-                            <span class="label">Frontend</span>
-                        </div>
-                
-                        <div class="plate">
-                            <div class="left-face"></div>
-                            <div class="right-face"></div>
-                            <span class="label">Security</span>
-                        </div>
-                    </div>
-                    <div class="registered">
-                        <div class="teams-pfp">
-                            <img src="assets/pfp/pfp1.avif" alt="Team Member 1">
-                            <img src="assets/pfp/pfp2.avif" alt="Team Member 2">
-                            <img src="assets/pfp/pfp3.avif" alt="Team Member 3">
-                            <img src="assets/pfp/pfp4.avif" alt="Team Member 4">
-                            <img src="assets/pfp/pfp5.avif" alt="Team Member 5">
-                            <img src="assets/pfp/pfp6.avif" alt="Team Member 6">
-                        </div>
-                        <p class="teams-pfp-txt">5,000+ already registered for DevConf 2026<br>15th September @ 2937, Franklin St, ME, San Diego</p>
-                    </div>
-                </div>
-            
-                <!-- Right Gallery -->
-                <div class="gallery right-gallery">
-                    <div class="item item-2">
-                        <img src="./assets/gallery/antenna-FDV1BaKNKEo-unsplash.jpg" alt="Workshop">
-                    </div>
-            
-                    <div class="item item-4">
-                        <img src="./assets/gallery/kari-bjorn-photography-bDsVfVh3i3E-unsplash.jpg" alt="Audience">
-                    </div>
-                </div>
-            
+          <!-- Plate Stack -->
+          <div class="gallery middle-gallery">
+            <div class="plate-stack">
+              <div class="plate">
+                <div class="left-face"></div>
+                <div class="right-face"></div>
+                <span class="label">AI/ML</span>
+              </div>
+
+              <div class="plate">
+                <div class="left-face"></div>
+                <div class="right-face"></div>
+                <span class="label">DevOps</span>
+              </div>
+
+              <div class="plate">
+                <div class="left-face"></div>
+                <div class="right-face"></div>
+                <span class="label">Frontend</span>
+              </div>
+
+              <div class="plate">
+                <div class="left-face"></div>
+                <div class="right-face"></div>
+                <span class="label">Security</span>
+              </div>
+            </div>
+            <div class="registered">
+              <div class="teams-pfp">
+                <img src="assets/pfp/pfp1.avif" alt="Team Member 1" />
+                <img src="assets/pfp/pfp2.avif" alt="Team Member 2" />
+                <img src="assets/pfp/pfp3.avif" alt="Team Member 3" />
+                <img src="assets/pfp/pfp4.avif" alt="Team Member 4" />
+                <img src="assets/pfp/pfp5.avif" alt="Team Member 5" />
+                <img src="assets/pfp/pfp6.avif" alt="Team Member 6" />
+              </div>
+              <p class="teams-pfp-txt">
+                5,000+ already registered for DevConf 2026<br />15th September @
+                2937, Franklin St, ME, San Diego
+              </p>
+            </div>
+          </div>
+
+          <!-- Right Gallery -->
+          <div class="gallery right-gallery">
+            <div class="item item-2">
+              <img
+                src="./assets/gallery/antenna-FDV1BaKNKEo-unsplash.jpg"
+                alt="Workshop"
+              />
             </div>
 
-            <div class="sponsors-container">
-                <div class="sponsors-section-heading">
-                    <h2 class="sponsors-section-title">Powered by Industry Leaders</h2>
-                    <p class="section-subtitle">
-                        DevConf 2026 is proudly supported by the companies building the future of software.
-                    </p>
-                </div>
-                <div class="sponsors-grid">
-                    <a href="#" class="sponsor-card">
-                        <img src="./assets/company-logos/microsoft.svg" alt="Cloudflare">
-                    </a> 
-                    <a href="#" class="sponsor-card">
-                        <img src="./assets/company-logos/netflix.svg" alt="GitHub">
-                    </a>
-                    <a href="#" class="sponsor-card">
-                    <img src="./assets/company-logos/spotify.svg" alt="Google">
-                    </a>
-                    <a href="#" class="sponsor-card">
-                        <img src="./assets/company-logos/google.svg" alt="Microsoft">
-                    </a>
-                    <a href="#" class="sponsor-card">
-                        <img src="./assets/company-logos/bose.svg" alt="Amazon Web Services">
-                    </a>
-                    <a href="#" class="sponsor-card">
-                        <img src="./assets/company-logos/paypal.svg" alt="Docker">
-                    </a>
-                    <a href="#" class="sponsor-card">
-                    <img src="./assets/company-logos/oracle.svg" alt="Vercel">
-                    </a>
-                    <a href="#" class="sponsor-card">
-                        <img src="./assets/company-logos/samsung.svg" alt="Figma">
-                    </a>
-                </div>
+            <div class="item item-4">
+              <img
+                src="./assets/gallery/kari-bjorn-photography-bDsVfVh3i3E-unsplash.jpg"
+                alt="Audience"
+              />
             </div>
+          </div>
+        </div>
+
+        <div class="sponsors-container">
+          <div class="sponsors-section-heading">
+            <h2 class="sponsors-section-title">Powered by Industry Leaders</h2>
+            <p class="section-subtitle">
+              DevConf 2026 is proudly supported by the companies building the
+              future of software.
+            </p>
+          </div>
+          <div class="sponsors-grid">
+            <a
+              href="https://www.microsoft.com/"
+              target="_blank"
+              class="sponsor-card"
+            >
+              <img src="./assets/company-logos/microsoft.svg" alt="Microsoft" />
+            </a>
+            <a
+              href="https://www.netflix.com/"
+              target="_blank"
+              class="sponsor-card"
+            >
+              <img src="./assets/company-logos/netflix.svg" alt="Netflix" />
+            </a>
+            <a
+              href="https://www.spotify.com/"
+              target="_blank"
+              class="sponsor-card"
+            >
+              <img src="./assets/company-logos/spotify.svg" alt="Spotify" />
+            </a>
+            <a
+              href="https://www.google.com/"
+              target="_blank"
+              class="sponsor-card"
+            >
+              <img src="./assets/company-logos/google.svg" alt="Google" />
+            </a>
+            <a
+              href="https://www.bose.com/"
+              target="_blank"
+              class="sponsor-card"
+            >
+              <img src="./assets/company-logos/bose.svg" alt="Bose" />
+            </a>
+            <a
+              href="https://www.paypal.com/"
+              target="_blank"
+              class="sponsor-card"
+            >
+              <img src="./assets/company-logos/paypal.svg" alt="Paypal" />
+            </a>
+            <a
+              href="https://www.oracle.com/"
+              target="_blank"
+              class="sponsor-card"
+            >
+              <img src="./assets/company-logos/oracle.svg" alt="Oracle" />
+            </a>
+            <a
+              href="https://www.samsung.com/"
+              target="_blank"
+              class="sponsor-card"
+            >
+              <img src="./assets/company-logos/samsung.svg" alt="Samsung" />
+            </a>
+          </div>
+        </div>
         </section>
+        <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-logo">
+                <img src="./assets/branding/logo-footer.svg" alt="DevConf Logo" />
+                <p>DEVCONF<br />2026</p>
+              </div>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/" target="_blank">
+                    <img src="./assets/icons/linkedin.svg" alt="LinkedIn" />
+                </a>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <img src="./assets/icons/instagram.svg" alt="Instagram" />
+                </a>
+                <a href="https://www.facebook.com/" target="_blank">
+                    <img src="./assets/icons/facebook.svg" alt="Facebook" />
+                </a>
+                <a href="https://www.x.com/" target="_blank">
+                    <img src="./assets/icons/x-twitter.svg" alt="X" />
+                </a>
+            </div>
+        </div>
+
+        <hr />
+
+        <div class="footer-bottom">
+          <p>© 2026 DevConf. All rights reserved.</p>
+        </div>
+        </footer>
     </main>
-</body>
+  </body>
 </html>
